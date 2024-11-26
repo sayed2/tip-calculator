@@ -33,6 +33,6 @@ function calculateTip() {
 document.getElementById("calculateBtn").addEventListener("click", calculateTip);
 
 //calculate base on input change
-const allEls = document.querySelectorAll("input,select").forEach((element) => {
+document.querySelectorAll("input,select").forEach((element) => {
   element.addEventListener("input", calculateTip);
 });
